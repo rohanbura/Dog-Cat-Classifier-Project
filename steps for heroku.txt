@@ -1,0 +1,14 @@
+Heroku Deployment
+	
+# Create a Procfile		
+Note. File name should be exactly same without extension	
+# add below lines to the Procfile		
+web: gunicorn app:app
+	
+# git init	
+# git add .	
+# git commit -m "initial commit"
+	
+# heroku create	# git remote -v	
+# git push heroku master	
+# heroku logs  --tail

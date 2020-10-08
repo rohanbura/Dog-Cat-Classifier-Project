@@ -1,0 +1,9 @@
+if __name__ == "__main__":   
+ clApp = ClientApp()    
+host = '0.0.0.0'   
+ port=5000    
+#app.run(host='0.0.0.0', port=port)   
+ # app.run(host='0.0.0.0', port=8000, debug=True)  
+  httpd = simple_server.make_server(host, port, app) 
+   print("Serving on %s %d" % (host, port))   
+ httpd.serve_forever()
